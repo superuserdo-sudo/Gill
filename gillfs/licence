@@ -1,0 +1,328 @@
+GOSL v1.0
+Gill's General Open Source License
+
+Copyright (c) [2026] [Rayan abdelli]
+
+PREAMBLE
+
+Gill's General Open Source License ("GOSL") is a permissive software
+license intended to grant broad rights to use, study, modify, copy,
+and distribute software.
+
+GOSL permits use of covered software in open-source, closed-source,
+commercial, and non-commercial works, subject to the terms of this
+License.
+
+1. DEFINITIONS
+
+1.1 "License" means this Gill's General Open Source License, version 1.0.
+
+1.2 "Original Work" means the software or other copyrightable material
+originally released under this License.
+
+1.3 "Author" means the copyright holder or holders of the Original Work.
+
+1.4 "You" means any individual or legal entity exercising rights
+granted by this License.
+
+1.5 "Source Code" means the preferred form of the work for making
+modifications to it.
+
+1.6 "Object Code" means any compiled, generated, binary, or otherwise
+non-source form of the work.
+
+1.7 "Modified Work" means a work based upon, incorporating, or
+containing the Original Work or any copyrightable portion of it,
+where the work has been modified or combined with other material.
+
+1.8 "Distribution" means making the Original Work or a Modified Work
+available to another person or entity, whether in Source Code or
+Object Code form.
+
+1.9 "Attribution Notice" means a reasonable notice identifying the
+Original Work and its original copyright holder.
+
+2. COPYRIGHT LICENSE GRANT
+
+Subject to the terms and conditions of this License, each Author grants
+You a worldwide, royalty-free, non-exclusive, perpetual copyright
+license to exercise the rights granted by this License.
+
+This grant includes the rights to reproduce, use, study, modify,
+prepare derivative works from, publish, display, perform, distribute,
+and otherwise make use of the Original Work.
+
+3. PATENT LICENSE GRANT
+
+Each Author grants You a worldwide, royalty-free, non-exclusive patent
+license to make, have made, use, offer to sell, sell, import, and
+otherwise transfer the Original Work, but only to the extent that such
+patent claims are necessarily infringed by the Original Work as
+provided by that Author.
+
+This patent grant does not extend to patent claims that are infringed
+solely by modifications, combinations, or other additions made by You
+or by another person.
+
+No patent rights are granted beyond those expressly provided by this
+Section.
+
+4. USE
+
+You may use the Original Work for any purpose, including:
+
+- personal use;
+- educational use;
+- research;
+- commercial use;
+- non-commercial use;
+- use within another software project;
+- use within open-source software; and
+- use within closed-source or proprietary software.
+
+This License does not restrict the field of endeavor in which the
+Original Work may be used.
+
+5. COPYING
+
+You may copy the Original Work, in whole or in part, in Source Code or
+Object Code form.
+
+You may make and distribute any number of copies, subject to the
+conditions of this License.
+
+6. MODIFICATION AND COMBINATION
+
+You may modify the Original Work for any purpose.
+
+You may combine the Original Work with other software, libraries,
+systems, or components.
+
+You may create Modified Works based upon or incorporating the Original
+Work.
+
+You are not required by this License to publish or disclose the Source
+Code of a Modified Work solely because it contains or is derived from
+the Original Work.
+
+7. DISTRIBUTION
+
+You may distribute the Original Work and Modified Works in Source Code
+or Object Code form.
+
+You may distribute such works:
+
+- for free;
+- for a fee;
+- as part of another software product;
+- as part of a commercial product;
+- as part of an open-source project; or
+- as part of a closed-source or proprietary project.
+
+You may apply different licensing terms to Your own original
+contributions and independently created portions of a Modified Work,
+provided that those terms do not restrict the rights granted by this
+License to the portions covered by GOSL.
+
+8. ATTRIBUTION AND NOTICES
+
+When You distribute the Original Work or a Modified Work, You must
+preserve applicable copyright notices and license notices contained in
+the Original Work, except where removal is permitted by applicable law.
+
+You may provide additional attribution to the Author.
+
+For software developed by Gill, attribution such as:
+
+"Contains software developed by Gill."
+
+is encouraged but is not required by this License.
+
+Attribution may appear in:
+
+- a NOTICE file;
+- documentation;
+- an About page;
+- a credits section;
+- source-code comments;
+- a legal notices section; or
+- another reasonable location appropriate to the form of distribution.
+
+Attribution does not require You to endorse, advertise, promote, or
+support Gill or the Author.
+
+9. MODIFIED WORKS
+
+If You distribute a Modified Work, You may identify the work as
+modified.
+
+You may use Your own project name, version number, branding, and
+copyright notices for Your modifications.
+
+You must not represent a Modified Work as the unmodified Original Work.
+
+A Modified Work may use a different license for its original
+contributions and independently created portions, provided that the
+portions covered by GOSL remain subject to this License.
+
+10. CLOSED-SOURCE WORKS
+
+A Modified Work may be distributed as closed-source or proprietary
+software.
+
+You are not required by this License to publish or disclose the Source
+Code of such a work.
+
+You are encouraged, but not required, to include a notice substantially
+similar to:
+
+"This software contains or was developed from software released under
+the Gill's General Open Source License."
+
+Failure to provide such a notice does not by itself constitute a
+violation of this License.
+
+11. OPEN-SOURCE WORKS
+
+You may distribute a Modified Work as open-source software under GOSL
+or under another license that You are legally entitled to apply to
+Your original contributions and independently created portions.
+
+The portions of a work covered by GOSL remain subject to this License
+unless the Author has separately granted additional permissions.
+
+Nothing in this License requires an entire Modified Work to be
+licensed under GOSL.
+
+12. NO ADDITIONAL RESTRICTIONS
+
+You may not impose additional restrictions on the rights granted by
+this License with respect to the Original Work.
+
+In particular, You may not prohibit recipients from exercising the
+rights granted by this License.
+
+This Section does not prevent You from imposing separate terms on Your
+own original contributions, services, warranties, support, or unrelated
+components, provided that those terms do not restrict the rights
+granted by GOSL for the Original Work.
+
+13. TRADEMARKS AND PROJECT NAMES
+
+This License does not grant permission to use the trademarks, logos,
+names, or branding of Gill, or any other project or organization,
+except where such use is reasonably necessary to describe the origin of
+the Original Work or is otherwise permitted by applicable law.
+
+You may state that Your software contains, uses, or was derived from
+software released under GOSL.
+
+You may not imply that the Author or Gill officially endorses,
+sponsors, or supports Your Modified Work unless separately authorized.
+
+14. THIRD-PARTY MATERIAL
+
+The Original Work may contain material that is subject to separate
+licenses.
+
+Such material remains subject to its applicable license.
+
+This License does not override or replace the terms of a third-party
+license.
+
+Recipients are responsible for complying with applicable licenses
+covering third-party material.
+
+15. NO WARRANTY
+
+THE ORIGINAL WORK AND ANY MATERIAL DISTRIBUTED UNDER THIS LICENSE ARE
+PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHOR
+DISCLAIMS ALL WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+THE AUTHOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE,
+SECURE, UNINTERRUPTED, OR SUITABLE FOR ANY PARTICULAR PURPOSE.
+
+16. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHOR SHALL
+NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, EXEMPLARY, OR OTHER DAMAGES ARISING FROM OR RELATED TO
+THE USE OR INABILITY TO USE THE ORIGINAL WORK.
+
+THIS INCLUDES, WITHOUT LIMITATION, LOSS OF DATA, LOSS OF PROFITS, LOSS
+OF BUSINESS, SYSTEM FAILURE, OR OTHER COMMERCIAL OR NON-COMMERCIAL
+LOSS.
+
+17. TERMINATION AND REINSTATEMENT
+
+Your rights under this License automatically terminate if You
+materially violate its terms.
+
+Termination does not affect rights that were properly granted to other
+recipients before termination.
+
+If You cease the violation and fully comply with this License within
+30 days after becoming aware of the violation, Your rights are
+automatically reinstated.
+
+If automatic reinstatement does not apply, the Author may expressly
+reinstate Your rights.
+
+Rights granted to recipients who received the work before termination
+remain unaffected.
+
+18. SEVERABILITY
+
+If any provision of this License is held to be invalid or
+unenforceable, that provision shall be interpreted or limited to the
+minimum extent necessary to make it enforceable where legally
+possible.
+
+The remaining provisions shall remain in effect.
+
+19. ENTIRE LICENSE
+
+This License constitutes the complete license governing the rights
+expressly granted for the Original Work under GOSL v1.0.
+
+Any additional permissions granted by the Author must be made
+separately and explicitly.
+
+20. LICENSE VERSION
+
+This work is licensed under:
+
+Gill's General Open Source License v1.0 (GOSL v1.0)
+
+A copy of this License should accompany distributions of the Original
+Work where reasonably practical.
+
+Failure to include a copy of this License does not by itself terminate
+the rights granted under this License, provided that the recipient
+otherwise receives the applicable license terms.
+
+21. COPYRIGHT NOTICES
+
+Existing copyright and license notices contained in the Original Work
+must be preserved in accordance with Section 8, except where removal
+is permitted by applicable law.
+
+You may add additional copyright notices identifying Your original
+contributions.
+
+22. FREEDOM OF DERIVATIVE USE
+
+Nothing in this License prevents You from creating software inspired
+by, based upon, incorporating, or interoperating with the Original
+Work, provided that You comply with the rights and obligations
+applicable to portions covered by this License.
+
+Ideas, concepts, algorithms, interfaces, or general techniques that
+are not protected by copyright remain subject to applicable law and
+are not restricted by this License merely because they were learned
+from the Original Work.
+
+END OF GOSL v1.0
