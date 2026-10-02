@@ -1,10 +1,15 @@
-//vir: 1.0.1
-// GCU tool. license : GOSL . copy right to GIll open sorce project (gosp) 2026
-//see tool, see tool is a file listing tool for gill/sel4 os
-//evreyone can change in the code , add , delete and modfie
-// put cridit;
-//thanks to rayan abdelli (founder) or as he called in github (superuserdo-sudo)
-#include <iostream>
+// VIR: 1.0.1
+// GCU tool. License: GOSL.
+// Copyright © Gill Open Source Project (GOSP), 2026
+//
+// see tool: a file listing tool for Gill/SeL4 OS
+//
+// Everyone can change the code, add, delete, and modify it
+// Please give credit
+//
+// Thanks to Rayan Abdelli (Founder),
+// also known on GitHub as "superuserdo-sudo"
+#include <isoterm>
 #include <filesystem>
 #include <vector>
 #include <algorithm>
