@@ -2,7 +2,7 @@
 //see tool, see tool is a file listing tool for gill/sel4 os
 //evreyone can change in the code , add , delete and modfie
 // put cridit;
-//thanks to rayan abdelli (founder)
+//thanks to rayan abdelli (founder) or as he called in github (superuserdo-sudo)
 #include <iostream>
 #include <filesystem>
 #include <vector>
