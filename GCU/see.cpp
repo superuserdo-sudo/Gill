@@ -13,9 +13,9 @@
 #include <filesystem>
 #include <vector>
 #include <algorithm>
-#include <chrono>
 #include <iomanip>
-#include <ctime>
+#include <sys/ioctl.h>
+#include <unistd.h>
 
 using namespace std;
 namespace fs = filesystem;
@@ -23,9 +23,6 @@ namespace fs = filesystem;
 struct Item {
     fs::directory_entry e;
     string name;
-    long long size;
-    time_t time;
-    bool dir;
 };
 
 void help() {
@@ -41,15 +38,17 @@ void help() {
          << "-vir  version\n";
 }
 
-string extcolor(const fs::directory_entry& e) {
+string color(const fs::directory_entry& e) {
     if (e.is_directory()) return "\033[1;34m";
     if (e.is_symlink())  return "\033[1;35m";
 
     auto p = e.status().permissions();
+
     if ((p & fs::perms::owner_exec) != fs::perms::none)
         return "\033[1;32m";
 
     string x = e.path().extension();
+
     if (x == ".cpp" || x == ".c" || x == ".h")
         return "\033[1;36m";
 
@@ -66,6 +65,7 @@ int main(int argc, char** argv) {
             help();
             return 0;
         }
+
         if (x=="-vir") {
             cout<<"see 1.0.1\n";
             return 0;
@@ -84,52 +84,45 @@ int main(int argc, char** argv) {
     for (auto& e : fs::directory_iterator(".")) {
         string n=e.path().filename();
 
-        if (!all && n[0]=='.') continue;
+        if (!all && !n.empty() && n[0]=='.')
+            continue;
 
-        long long s=0;
-        if (e.is_regular_file())
-            s=e.file_size();
-
-        auto ft=e.last_write_time();
-        auto now=chrono::system_clock::now();
-        auto fnow=decltype(ft)::clock::now();
-
-        time_t t=chrono::system_clock::to_time_t(
-            now+(ft-fnow)
-        );
-
-        v.push_back({e,n,s,t,e.is_directory()});
+        v.push_back({e,n});
     }
 
-    sort(v.begin(),v.end(),[&](const Item& a,const Item& b) {
-        if (a.dir != b.dir)
-            return a.dir > b.dir;
-
-        if (bytime && a.time != b.time)
-            return a.time > b.time;
-
-        if (bysize && a.size != b.size)
-            return a.size > b.size;
-
+    sort(v.begin(),v.end(),[](const Item& a,const Item& b) {
         return a.name < b.name;
     });
 
     if (rev)
-        std::reverse(v.begin(),v.end());
+        reverse(v.begin(),v.end());
 
-    for (auto& x : v) {
-        cout << extcolor(x.e) << x.name;
+    struct winsize ws{};
+    ioctl(STDOUT_FILENO,TIOCGWINSZ,&ws);
 
-        if (wt) {
-            tm* t=localtime(&x.time);
-            cout << "  ";
+    int width = ws.ws_col ? ws.ws_col : 80;
+    int longest = 0;
 
-            if (full)
-                cout << put_time(t,"%Y-%m-%d %H:%M:%S");
-            else
-                cout << put_time(t,"%H:%M");
+    for (auto& x : v)
+        longest = max(longest,(int)x.name.size());
+
+    int col = longest + 3;
+    int columns = max(1,width / col);
+    int rows = (v.size() + columns - 1) / columns;
+
+    for (int r=0; r<rows; r++) {
+        for (int c=0; c<columns; c++) {
+            int i = c * rows + r;
+
+            if (i >= (int)v.size())
+                continue;
+
+            cout << color(v[i].e)
+                 << left << setw(col)
+                 << v[i].name
+                 << "\033[0m";
         }
 
-        cout << "\033[0m\n";
+        cout << '\n';
     }
 }
