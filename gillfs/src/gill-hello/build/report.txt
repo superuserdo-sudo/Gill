@@ -1,0 +1,102 @@
+# Initial Task (CapDL Initialiser) Details
+
+# IRQ Details
+
+# TCB Details
+	- TCB: 'tcb_hello'
+		* IP: 0x200000
+		* SP: 0x7fffffffd000
+		* IPC Buffer: 0x7fffffffe000
+		* Priority: 0
+		* CPU Affinity: 0
+		* Bound Objects:
+			-> CSpace: 'cnode_hello_root'
+			-> VSpace: 'pml4_hello'
+			-> IPC Buffer: 'frame_ipcbuf_hello'
+			-> Fault Endpoint: 'ep_fault_monitor'
+			-> Scheduling Context: 'sched_context_hello'
+			-> Notification: 'ntfn_hello'
+
+	- TCB: 'tcb_monitor'
+		* IP: 0x200000
+		* SP: 0x7fffffffd000
+		* IPC Buffer: 0x7fffffffe000
+		* Priority: 255
+		* CPU Affinity: 0
+		* Bound Objects:
+			-> VSpace: 'pml4_monitor'
+			-> IPC Buffer: 'frame_ipcbuf_monitor'
+			-> CSpace: 'cnode_monitor'
+			-> Scheduling Context: 'sched_context_monitor'
+
+
+# CNode Details
+	- CNode: 'cnode_hello'
+		* Slot: 1
+			-> Object: 'ntfn_hello'
+			-> Rights: Read
+			-> Badge: 0x0
+		* Slot: 2
+			-> Object: 'ep_fault_monitor'
+			-> Rights: Write, Grant Reply
+			-> Badge: 0x1
+		* Slot: 3
+			-> Object: 'pml4_hello'
+		* Slot: 4
+			-> Object: 'reply_hello'
+
+	- CNode: 'cnode_monitor'
+		* Slot: 1
+			-> Object: 'ep_fault_monitor'
+			-> Rights: Read
+			-> Badge: 0x0
+		* Slot: 2
+			-> Object: 'reply_monitor'
+		* Slot: 10
+			-> Object: 'tcb_hello'
+
+	- CNode: 'cnode_hello_root'
+		* Slot: 0
+			-> Object: 'cnode_hello'
+
+
+# Architecture Specific Details
+
+# Kernel Objects Details: ID, Type, Name
+	0 - CNode: 'cnode_hello'
+	1 - CNode: 'cnode_monitor'
+	2 - Page(4 KiB): 'frame_elf_hello_000000000'
+	3 - Page(4 KiB): 'frame_elf_hello_000000001'
+	4 - Page(4 KiB): 'frame_elf_monitor_000000000'
+	5 - Page(4 KiB): 'frame_elf_monitor_000000001'
+	6 - Page(4 KiB): 'frame_elf_monitor_000000002'
+	7 - Page(4 KiB): 'frame_elf_monitor_000000003'
+	8 - Page(4 KiB): 'frame_elf_monitor_000000004'
+	9 - Page(4 KiB): 'frame_hello_stack_000000000'
+	10 - Page(4 KiB): 'frame_hello_stack_000000001'
+	11 - Page(4 KiB): 'frame_ipcbuf_hello'
+	12 - Page(4 KiB): 'frame_ipcbuf_monitor'
+	13 - Page(4 KiB): 'frame_monitor_stack'
+	14 - PageTable: 'pd_hello_vaddr_0x200000'
+	15 - PageTable: 'pd_hello_vaddr_0x7fffffe00000'
+	16 - PageTable: 'pd_monitor_vaddr_0x200000'
+	17 - PageTable: 'pd_monitor_vaddr_0x7fffffe00000'
+	18 - PageTable: 'pdpt_hello_vaddr_0x0'
+	19 - PageTable: 'pdpt_hello_vaddr_0x7fffc0000000'
+	20 - PageTable: 'pdpt_monitor_vaddr_0x0'
+	21 - PageTable: 'pdpt_monitor_vaddr_0x7fffc0000000'
+	22 - PageTable: 'pml4_hello'
+	23 - PageTable: 'pml4_monitor'
+	24 - PageTable: 'pt_hello_vaddr_0x200000'
+	25 - PageTable: 'pt_hello_vaddr_0x7fffffffe000'
+	26 - PageTable: 'pt_monitor_vaddr_0x200000'
+	27 - PageTable: 'pt_monitor_vaddr_0x7fffffffc000'
+	28 - CNode: 'cnode_hello_root'
+	29 - TCB: 'tcb_hello'
+	30 - TCB: 'tcb_monitor'
+	31 - SchedContext: 'sched_context_hello'
+	32 - SchedContext: 'sched_context_monitor'
+	33 - Notification: 'ntfn_hello'
+	34 - Reply: 'reply_hello'
+	35 - Reply: 'reply_monitor'
+	36 - Endpoint: 'ep_fault_monitor'
