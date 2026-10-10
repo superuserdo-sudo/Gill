@@ -41,8 +41,6 @@ The project is being developed incrementally. Some ideas are implemented, some a
 - **Gill system:** the core operating-system and kernel-related project.
 - **GCU — Gill Core Utilities:** a collection of small command-line utilities intended for the Gill ecosystem.
 - **Gillux:** a Linux-based member of the broader Gill project family.
-- **Gill9:** a Plan 9-related direction within the project family.
-- **Gill dos:** a FreeDOS-related direction within the project family.
 
 These names describe the project's areas and intended ecosystem. Their implementation status may differ; consult the relevant subdirectory and release notes for what is currently usable.
 
