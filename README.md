@@ -110,17 +110,8 @@ Planned components discussed for Gillux include:
 - **OpenCinit:** a proposed initialization system.
 - **GCU:** Gill Core Utilities.
 - **GLASP(M)AS:** a proposed package manager and source/binary management tool.
-- **ZeroScreen / ZS12:** a planned display-system direction.
 
 These are project plans and names, not claims that all components are ready for use.
-
-### Gill9
-
-Gill9 is the Plan 9-related direction in the Gill family. Its concrete scope and implementation should be documented in its own source tree as they mature.
-
-### Gill dos
-
-Gill dos is the FreeDOS-related direction in the project family. Its current scope should be checked against the actual implementation and documentation.
 
 ---
 
